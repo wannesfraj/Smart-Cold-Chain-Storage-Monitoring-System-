@@ -1,0 +1,4 @@
+Compilation Wokwi Web : SUCCESS
+Version partagee : https://wokwi.com/projects/480161896292697089
+Sources modulaires et bibliotheques epinglees chargees par le compilateur Wokwi.
+Demarrage confirme par state=NORMAL a 4 degres, porte fermee.

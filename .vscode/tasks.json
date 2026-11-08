@@ -1,0 +1,21 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "SCCS : compiler",
+      "type": "shell",
+      "command": "${userHome}/.platformio/penv/Scripts/platformio.exe",
+      "args": ["run"],
+      "group": { "kind": "build", "isDefault": true },
+      "problemMatcher": ["$gcc"]
+    },
+    {
+      "label": "SCCS : tests locaux",
+      "type": "shell",
+      "command": "python",
+      "args": ["tools/test_project.py"],
+      "group": "test",
+      "problemMatcher": []
+    }
+  ]
+}

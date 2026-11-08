@@ -1,0 +1,4 @@
+OneWire@2.3.8
+DallasTemperature@4.0.6
+DHT sensor library for ESPx@1.19.0
+LiquidCrystal I2C@1.1.2

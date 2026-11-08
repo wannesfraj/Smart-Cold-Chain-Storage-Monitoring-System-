@@ -1,0 +1,258 @@
+{
+  "date": "2026-11-08",
+  "engine": "Wokwi ESP32 dans Chrome",
+  "firmware": "Binaire PlatformIO SCCS_merged.bin - Arduino-ESP32 2.0.17",
+  "scenarios": [
+    {
+      "name": "01 Fonctionnement normal",
+      "result": "PASS",
+      "observed": {
+        "t_ms": "7560",
+        "storage": "4.00",
+        "ambient": "24.0",
+        "humidity": "45.0",
+        "lux": "10.0",
+        "door": "CLOSED",
+        "door_s": "0",
+        "state": "NORMAL",
+        "cooling": "0",
+        "alarms": "NONE",
+        "line": "STATUS t_ms=7560 storage=4.00 ambient=24.0 humidity=45.0 lux=10.0 door=CLOSED door_s=0 state=NORMAL cooling=0 alarms=NONE"
+      },
+      "capture": "captures/01_normal.png"
+    },
+    {
+      "name": "02 Temperature elevee",
+      "result": "PASS",
+      "observed": {
+        "t_ms": "10560",
+        "storage": "9.00",
+        "ambient": "24.0",
+        "humidity": "45.0",
+        "lux": "10.0",
+        "door": "CLOSED",
+        "door_s": "0",
+        "state": "ALARM",
+        "cooling": "1",
+        "alarms": "TEMP",
+        "line": "STATUS t_ms=10560 storage=9.00 ambient=24.0 humidity=45.0 lux=10.0 door=CLOSED door_s=0 state=ALARM cooling=1 alarms=TEMP"
+      },
+      "capture": "captures/02_temperature.png"
+    },
+    {
+      "name": "03a Retour sous le seuil d'alarme, froid maintenu",
+      "result": "PASS",
+      "observed": {
+        "t_ms": "13560",
+        "storage": "7.50",
+        "ambient": "24.0",
+        "humidity": "45.0",
+        "lux": "10.0",
+        "door": "CLOSED",
+        "door_s": "0",
+        "state": "COOLING",
+        "cooling": "1",
+        "alarms": "NONE",
+        "line": "STATUS t_ms=13560 storage=7.50 ambient=24.0 humidity=45.0 lux=10.0 door=CLOSED door_s=0 state=COOLING cooling=1 alarms=NONE"
+      }
+    },
+    {
+      "name": "03b Hysteresis, maintien du froid a 5 C",
+      "result": "PASS",
+      "observed": {
+        "t_ms": "14560",
+        "storage": "5.00",
+        "ambient": "24.0",
+        "humidity": "45.0",
+        "lux": "10.0",
+        "door": "CLOSED",
+        "door_s": "0",
+        "state": "COOLING",
+        "cooling": "1",
+        "alarms": "NONE",
+        "line": "STATUS t_ms=14560 storage=5.00 ambient=24.0 humidity=45.0 lux=10.0 door=CLOSED door_s=0 state=COOLING cooling=1 alarms=NONE"
+      }
+    },
+    {
+      "name": "03c Arret du froid a 4 C",
+      "result": "PASS",
+      "observed": {
+        "t_ms": "15560",
+        "storage": "4.00",
+        "ambient": "24.0",
+        "humidity": "45.0",
+        "lux": "10.0",
+        "door": "CLOSED",
+        "door_s": "0",
+        "state": "NORMAL",
+        "cooling": "0",
+        "alarms": "NONE",
+        "line": "STATUS t_ms=15560 storage=4.00 ambient=24.0 humidity=45.0 lux=10.0 door=CLOSED door_s=0 state=NORMAL cooling=0 alarms=NONE"
+      }
+    },
+    {
+      "name": "03d Maintien arrete a 5 C",
+      "result": "PASS",
+      "observed": {
+        "t_ms": "16560",
+        "storage": "5.00",
+        "ambient": "24.0",
+        "humidity": "45.0",
+        "lux": "10.0",
+        "door": "CLOSED",
+        "door_s": "0",
+        "state": "NORMAL",
+        "cooling": "0",
+        "alarms": "NONE",
+        "line": "STATUS t_ms=16560 storage=5.00 ambient=24.0 humidity=45.0 lux=10.0 door=CLOSED door_s=0 state=NORMAL cooling=0 alarms=NONE"
+      }
+    },
+    {
+      "name": "03e Demarrage a 6 C",
+      "result": "PASS",
+      "observed": {
+        "t_ms": "17560",
+        "storage": "6.00",
+        "ambient": "24.0",
+        "humidity": "45.0",
+        "lux": "10.0",
+        "door": "CLOSED",
+        "door_s": "0",
+        "state": "COOLING",
+        "cooling": "1",
+        "alarms": "NONE",
+        "line": "STATUS t_ms=17560 storage=6.00 ambient=24.0 humidity=45.0 lux=10.0 door=CLOSED door_s=0 state=COOLING cooling=1 alarms=NONE"
+      },
+      "capture": "captures/03_refroidissement.png"
+    },
+    {
+      "name": "04a Porte ouverte avant temporisation",
+      "result": "PASS",
+      "observed": {
+        "t_ms": "20990",
+        "storage": "4.00",
+        "ambient": "24.0",
+        "humidity": "45.0",
+        "lux": "10.0",
+        "door": "OPEN",
+        "door_s": "0",
+        "state": "DOOR_OPEN",
+        "cooling": "0",
+        "alarms": "NONE",
+        "line": "STATUS t_ms=20990 storage=4.00 ambient=24.0 humidity=45.0 lux=10.0 door=OPEN door_s=0 state=DOOR_OPEN cooling=0 alarms=NONE"
+      }
+    },
+    {
+      "name": "06a Reactivite pendant ouverture",
+      "result": "PASS",
+      "observed": {
+        "t_ms": "22560",
+        "storage": "9.00",
+        "ambient": "24.0",
+        "humidity": "45.0",
+        "lux": "10.0",
+        "door": "OPEN",
+        "door_s": "1",
+        "state": "ALARM",
+        "cooling": "0",
+        "alarms": "TEMP",
+        "line": "STATUS t_ms=22560 storage=9.00 ambient=24.0 humidity=45.0 lux=10.0 door=OPEN door_s=1 state=ALARM cooling=0 alarms=TEMP"
+      },
+      "capture": "captures/06_reactivite.png"
+    },
+    {
+      "name": "04b Porte ouverte plus de 30 secondes",
+      "result": "PASS",
+      "observed": {
+        "t_ms": "50991",
+        "storage": "4.00",
+        "ambient": "24.0",
+        "humidity": "45.0",
+        "lux": "10.0",
+        "door": "OPEN",
+        "door_s": "30",
+        "state": "ALARM",
+        "cooling": "0",
+        "alarms": "DOOR",
+        "line": "STATUS t_ms=50991 storage=4.00 ambient=24.0 humidity=45.0 lux=10.0 door=OPEN door_s=30 state=ALARM cooling=0 alarms=DOOR"
+      },
+      "capture": "captures/04_porte.png"
+    },
+    {
+      "name": "05 Retour a la normale apres fermeture",
+      "result": "PASS",
+      "observed": {
+        "t_ms": "53193",
+        "storage": "4.00",
+        "ambient": "24.0",
+        "humidity": "45.0",
+        "lux": "10.0",
+        "door": "CLOSED",
+        "door_s": "0",
+        "state": "NORMAL",
+        "cooling": "0",
+        "alarms": "NONE",
+        "line": "STATUS t_ms=53193 storage=4.00 ambient=24.0 humidity=45.0 lux=10.0 door=CLOSED door_s=0 state=NORMAL cooling=0 alarms=NONE"
+      },
+      "capture": "captures/05_retour.png"
+    },
+    {
+      "name": "07 Innovation : lumiere oubliee",
+      "result": "PASS",
+      "observed": {
+        "t_ms": "61001",
+        "storage": "4.00",
+        "ambient": "24.0",
+        "humidity": "45.0",
+        "lux": "999.5",
+        "door": "CLOSED",
+        "door_s": "0",
+        "state": "ALARM",
+        "cooling": "0",
+        "alarms": "LIGHT",
+        "line": "STATUS t_ms=61001 storage=4.00 ambient=24.0 humidity=45.0 lux=999.5 door=CLOSED door_s=0 state=ALARM cooling=0 alarms=LIGHT"
+      },
+      "capture": "captures/07_lumiere.png"
+    },
+    {
+      "name": "08 Retour apres extinction de la lumiere",
+      "result": "PASS",
+      "observed": {
+        "t_ms": "63752",
+        "storage": "4.00",
+        "ambient": "24.0",
+        "humidity": "45.0",
+        "lux": "10.0",
+        "door": "CLOSED",
+        "door_s": "0",
+        "state": "NORMAL",
+        "cooling": "0",
+        "alarms": "NONE",
+        "line": "STATUS t_ms=63752 storage=4.00 ambient=24.0 humidity=45.0 lux=10.0 door=CLOSED door_s=0 state=NORMAL cooling=0 alarms=NONE"
+      }
+    },
+    {
+      "name": "09 Configuration serie, rejet incoherent et restauration",
+      "result": "PASS",
+      "observed": {
+        "t_ms": "81752",
+        "storage": "4.00",
+        "ambient": "24.0",
+        "humidity": "45.0",
+        "lux": "10.0",
+        "door": "CLOSED",
+        "door_s": "0",
+        "state": "NORMAL",
+        "cooling": "0",
+        "alarms": "NONE",
+        "line": "STATUS t_ms=81752 storage=4.00 ambient=24.0 humidity=45.0 lux=10.0 door=CLOSED door_s=0 state=NORMAL cooling=0 alarms=NONE"
+      },
+      "responses": [
+        "OK SET",
+        "ERR seuils",
+        "OK RESET"
+      ]
+    }
+  ],
+  "firmware_sha256": "2edde43cdfab32007d40c9199c5470b72dc033e0339deaaf90c1ffbadc51fd3e"
+}

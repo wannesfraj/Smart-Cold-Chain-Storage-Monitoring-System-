@@ -1,0 +1,54 @@
+S.C.C.S. - MINI-PROJET SYSTEMES PROGRAMMABLES
+Auteur : Wannes Fraj
+Groupe : 2ème GII 3
+Année universitaire : 2026-2027
+
+LIEN WOKWI
+https://wokwi.com/projects/480161896292697089
+
+Le lien a été vérifié dans un navigateur sans connexion : accès HTTP 200,
+sources modulaires visibles, compilation Wokwi Web réussie et démarrage NORMAL.
+Le projet est public. Pour le retrouver et le modifier depuis ton compte,
+ouvre le lien puis enregistre une copie dans ton compte Wokwi.
+
+LIEN GITHUB
+https://github.com/wannesfraj/Smart-Cold-Chain-Storage-Monitoring-System-
+
+Le dépôt contient le projet PlatformIO, le circuit Wokwi, les sources
+modulaires, le rapport PDF, le firmware et les preuves de validation.
+
+RAPPORT
+docs/Rapport_SCCS.pdf - huit pages, identité renseignée et captures réelles.
+
+ARCHIVE DU PROJET COMPLET
+dist/SCCS_projet_complet.zip
+
+VALIDATION EFFECTUEE
+- Compilation ESP32 par PlatformIO : SUCCESS.
+- 20 scénarios C++ sur PC, 59 assertions : PASS.
+- Correspondance des GPIO, alimentations et résistances : PASS.
+- 14 observations Wokwi, avec le binaire exact de PlatformIO : PASS.
+- Compilation et démarrage des sources du lien Wokwi : SUCCESS.
+- Commandes série SET, rejet d'un seuil incohérent et RESET vérifiés.
+
+DEMONSTRATION RAPIDE
+1. Ouvrir le lien Wokwi et cliquer sur le bouton vert de simulation.
+2. Observer NORMAL à 4 °C, puis régler le DS18B20 à 9 °C : alarme TEMP.
+3. Choisir 7,5, 5, 4, 5 puis 6 °C pour montrer les deux hystérésis.
+4. Remettre 4 °C et ouvrir la porte (interrupteur à droite) plus de 30 s
+   de temps simulé : alarme DOOR. Refermer pour revenir à NORMAL.
+5. Porte fermée, choisir 1000 lx sur la LDR pendant 5 s : alarme LIGHT.
+6. Rétablir 10 lx. Entrer CONFIG dans le moniteur série.
+
+EXECUTION LOCALE AVEC VS CODE
+Ouvrir le dossier complet, compiler avec PlatformIO puis F1 >
+Wokwi: Start Simulator. wokwi.toml utilise le binaire compilé localement.
+
+DEPOT OFFICIEL A REALISER PAR L'ETUDIANT
+Selon le sujet : rapport et lien Wokwi à joindre dans l'espace du devoir
+Google Classroom, avant le 12 décembre 2026 à 23 h 59. Le lien GitHub est
+facultatif. Vérifier les pièces jointes puis finaliser l'envoi.
+Aucun dépôt Google Classroom n'a été réalisé automatiquement.
+
+Prendre connaissance du code, des seuils et des résultats pour pouvoir
+expliquer personnellement les choix lors de la démonstration.

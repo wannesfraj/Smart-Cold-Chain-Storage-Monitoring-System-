@@ -1,0 +1,8 @@
+.pio/
+.tools/
+__pycache__/
+*.pyc
+.vscode/c_cpp_properties.json
+.vscode/.browse.c_cpp.db*
+dist/
+

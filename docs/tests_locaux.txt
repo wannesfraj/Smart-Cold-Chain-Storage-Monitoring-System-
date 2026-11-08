@@ -1,0 +1,22 @@
+PASS 01 normal, porte fermee
+PASS 02 temperature critique strictement superieure a 8 C
+PASS 03 hysteresis du thermostat 4 / 6 C
+PASS 04 hysteresis de l'alarme 7.5 / 8 C
+PASS 05 porte ouverte, frontiere 30 secondes
+PASS 06 cumul et effacement independant des alarmes
+PASS 07 reinitialisation du compteur de porte
+PASS 08 suspension et reprise du refroidissement par la porte
+PASS 09 lumiere forte porte fermee pendant 5 secondes
+PASS 10 lumiere ignoree porte ouverte, compteur a fermeture
+PASS 11 demarrage, sonde absente et recuperation
+PASS 12 sonde invalide : alarme et sortie de froid arretee
+PASS 13 surveillance de la fraicheur de la mesure
+PASS 14 le DHT ne remplace pas la sonde principale
+PASS 15 debordement de millis pendant une ouverture
+PASS 16 anti-rebond dans les deux sens
+PASS 17 anti-rebond au debordement de millis
+PASS 18 validation des parametres
+PASS 19 configuration de la temporisation
+PASS 20 reactivite pendant la temporisation de porte
+SUCCESS 20 scenarios, 59 assertions
+PASS cablage et absence de delay()

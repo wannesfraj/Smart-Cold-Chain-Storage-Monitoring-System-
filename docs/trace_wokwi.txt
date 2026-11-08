@@ -1,0 +1,101 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+entry 0x400805e4
+SCCS READY - HELP pour les commandes
+CONFIG ON=6.00 OFF=4.00 HIGH=8.00 CLEAR=7.50 DOOR=30s LUX=300
+STATUS t_ms=1781 storage=NA ambient=NA humidity=NA lux=10.0 door=CLOSED door_s=0 state=INIT cooling=0 alarms=NONE
+STATUS t_ms=2560 storage=4.00 ambient=NA humidity=NA lux=10.0 door=CLOSED door_s=0 state=NORMAL cooling=0 alarms=NONE
+STATUS t_ms=3560 storage=4.00 ambient=NA humidity=NA lux=10.0 door=CLOSED door_s=0 state=NORMAL cooling=0 alarms=NONE
+STATUS t_ms=4560 storage=4.00 ambient=24.0 humidity=45.0 lux=10.0 door=CLOSED door_s=0 state=NORMAL cooling=0 alarms=NONE
+STATUS t_ms=5560 storage=4.00 ambient=24.0 humidity=45.0 lux=10.0 door=CLOSED door_s=0 state=NORMAL cooling=0 alarms=NONE
+STATUS t_ms=6560 storage=4.00 ambient=24.0 humidity=45.0 lux=10.0 door=CLOSED door_s=0 state=NORMAL cooling=0 alarms=NONE
+STATUS t_ms=7560 storage=4.00 ambient=24.0 humidity=45.0 lux=10.0 door=CLOSED door_s=0 state=NORMAL cooling=0 alarms=NONE
+STATUS t_ms=8560 storage=4.00 ambient=24.0 humidity=45.0 lux=10.0 door=CLOSED door_s=0 state=NORMAL cooling=0 alarms=NONE
+STATUS t_ms=9560 storage=4.00 ambient=24.0 humidity=45.0 lux=10.0 door=CLOSED door_s=0 state=NORMAL cooling=0 alarms=NONE
+STATUS t_ms=10560 storage=9.00 ambient=24.0 humidity=45.0 lux=10.0 door=CLOSED door_s=0 state=ALARM cooling=1 alarms=TEMP
+STATUS t_ms=11560 storage=9.00 ambient=24.0 humidity=45.0 lux=10.0 door=CLOSED door_s=0 state=ALARM cooling=1 alarms=TEMP
+STATUS t_ms=12560 storage=9.00 ambient=24.0 humidity=45.0 lux=10.0 door=CLOSED door_s=0 state=ALARM cooling=1 alarms=TEMP
+STATUS t_ms=13560 storage=7.50 ambient=24.0 humidity=45.0 lux=10.0 door=CLOSED door_s=0 state=COOLING cooling=1 alarms=NONE
+STATUS t_ms=14560 storage=5.00 ambient=24.0 humidity=45.0 lux=10.0 door=CLOSED door_s=0 state=COOLING cooling=1 alarms=NONE
+STATUS t_ms=15560 storage=4.00 ambient=24.0 humidity=45.0 lux=10.0 door=CLOSED door_s=0 state=NORMAL cooling=0 alarms=NONE
+STATUS t_ms=16560 storage=5.00 ambient=24.0 humidity=45.0 lux=10.0 door=CLOSED door_s=0 state=NORMAL cooling=0 alarms=NONE
+STATUS t_ms=17560 storage=6.00 ambient=24.0 humidity=45.0 lux=10.0 door=CLOSED door_s=0 state=COOLING cooling=1 alarms=NONE
+STATUS t_ms=18560 storage=6.00 ambient=24.0 humidity=45.0 lux=10.0 door=CLOSED door_s=0 state=COOLING cooling=1 alarms=NONE
+STATUS t_ms=19560 storage=6.00 ambient=24.0 humidity=45.0 lux=10.0 door=CLOSED door_s=0 state=COOLING cooling=1 alarms=NONE
+STATUS t_ms=20560 storage=4.00 ambient=24.0 humidity=45.0 lux=10.0 door=CLOSED door_s=0 state=NORMAL cooling=0 alarms=NONE
+STATUS t_ms=20990 storage=4.00 ambient=24.0 humidity=45.0 lux=10.0 door=OPEN door_s=0 state=DOOR_OPEN cooling=0 alarms=NONE
+STATUS t_ms=21990 storage=4.00 ambient=24.0 humidity=45.0 lux=10.0 door=OPEN door_s=1 state=DOOR_OPEN cooling=0 alarms=NONE
+STATUS t_ms=22560 storage=9.00 ambient=24.0 humidity=45.0 lux=10.0 door=OPEN door_s=1 state=ALARM cooling=0 alarms=TEMP
+STATUS t_ms=23560 storage=9.00 ambient=24.0 humidity=45.0 lux=10.0 door=OPEN door_s=2 state=ALARM cooling=0 alarms=TEMP
+STATUS t_ms=24560 storage=9.00 ambient=24.0 humidity=45.0 lux=10.0 door=OPEN door_s=3 state=ALARM cooling=0 alarms=TEMP
+STATUS t_ms=25560 storage=4.00 ambient=24.0 humidity=45.0 lux=10.0 door=OPEN door_s=4 state=DOOR_OPEN cooling=0 alarms=NONE
+STATUS t_ms=26560 storage=4.00 ambient=24.0 humidity=45.0 lux=10.0 door=OPEN door_s=5 state=DOOR_OPEN cooling=0 alarms=NONE
+STATUS t_ms=27560 storage=4.00 ambient=24.0 humidity=45.0 lux=10.0 door=OPEN door_s=6 state=DOOR_OPEN cooling=0 alarms=NONE
+STATUS t_ms=28560 storage=4.00 ambient=24.0 humidity=45.0 lux=10.0 door=OPEN door_s=7 state=DOOR_OPEN cooling=0 alarms=NONE
+STATUS t_ms=29560 storage=4.00 ambient=24.0 humidity=45.0 lux=10.0 door=OPEN door_s=8 state=DOOR_OPEN cooling=0 alarms=NONE
+STATUS t_ms=30560 storage=4.00 ambient=24.0 humidity=45.0 lux=10.0 door=OPEN door_s=9 state=DOOR_OPEN cooling=0 alarms=NONE
+STATUS t_ms=31560 storage=4.00 ambient=24.0 humidity=45.0 lux=10.0 door=OPEN door_s=10 state=DOOR_OPEN cooling=0 alarms=NONE
+STATUS t_ms=32560 storage=4.00 ambient=24.0 humidity=45.0 lux=10.0 door=OPEN door_s=11 state=DOOR_OPEN cooling=0 alarms=NONE
+STATUS t_ms=33560 storage=4.00 ambient=24.0 humidity=45.0 lux=10.0 door=OPEN door_s=12 state=DOOR_OPEN cooling=0 alarms=NONE
+STATUS t_ms=34560 storage=4.00 ambient=24.0 humidity=45.0 lux=10.0 door=OPEN door_s=13 state=DOOR_OPEN cooling=0 alarms=NONE
+STATUS t_ms=35560 storage=4.00 ambient=24.0 humidity=45.0 lux=10.0 door=OPEN door_s=14 state=DOOR_OPEN cooling=0 alarms=NONE
+STATUS t_ms=36560 storage=4.00 ambient=24.0 humidity=45.0 lux=10.0 door=OPEN door_s=15 state=DOOR_OPEN cooling=0 alarms=NONE
+STATUS t_ms=37560 storage=4.00 ambient=24.0 humidity=45.0 lux=10.0 door=OPEN door_s=16 state=DOOR_OPEN cooling=0 alarms=NONE
+STATUS t_ms=38560 storage=4.00 ambient=24.0 humidity=45.0 lux=10.0 door=OPEN door_s=17 state=DOOR_OPEN cooling=0 alarms=NONE
+STATUS t_ms=39560 storage=4.00 ambient=24.0 humidity=45.0 lux=10.0 door=OPEN door_s=18 state=DOOR_OPEN cooling=0 alarms=NONE
+STATUS t_ms=40560 storage=4.00 ambient=24.0 humidity=45.0 lux=10.0 door=OPEN door_s=19 state=DOOR_OPEN cooling=0 alarms=NONE
+STATUS t_ms=41560 storage=4.00 ambient=24.0 humidity=45.0 lux=10.0 door=OPEN door_s=20 state=DOOR_OPEN cooling=0 alarms=NONE
+STATUS t_ms=42560 storage=4.00 ambient=24.0 humidity=45.0 lux=10.0 door=OPEN door_s=21 state=DOOR_OPEN cooling=0 alarms=NONE
+STATUS t_ms=43560 storage=4.00 ambient=24.0 humidity=45.0 lux=10.0 door=OPEN door_s=22 state=DOOR_OPEN cooling=0 alarms=NONE
+STATUS t_ms=44560 storage=4.00 ambient=24.0 humidity=45.0 lux=10.0 door=OPEN door_s=23 state=DOOR_OPEN cooling=0 alarms=NONE
+STATUS t_ms=45560 storage=4.00 ambient=24.0 humidity=45.0 lux=10.0 door=OPEN door_s=24 state=DOOR_OPEN cooling=0 alarms=NONE
+STATUS t_ms=46560 storage=4.00 ambient=24.0 humidity=45.0 lux=10.0 door=OPEN door_s=25 state=DOOR_OPEN cooling=0 alarms=NONE
+STATUS t_ms=47560 storage=4.00 ambient=24.0 humidity=45.0 lux=10.0 door=OPEN door_s=26 state=DOOR_OPEN cooling=0 alarms=NONE
+STATUS t_ms=48560 storage=4.00 ambient=24.0 humidity=45.0 lux=10.0 door=OPEN door_s=27 state=DOOR_OPEN cooling=0 alarms=NONE
+STATUS t_ms=49560 storage=4.00 ambient=24.0 humidity=45.0 lux=10.0 door=OPEN door_s=28 state=DOOR_OPEN cooling=0 alarms=NONE
+STATUS t_ms=50560 storage=4.00 ambient=24.0 humidity=45.0 lux=10.0 door=OPEN door_s=29 state=DOOR_OPEN cooling=0 alarms=NONE
+STATUS t_ms=50991 storage=4.00 ambient=24.0 humidity=45.0 lux=10.0 door=OPEN door_s=30 state=ALARM cooling=0 alarms=DOOR
+STATUS t_ms=51991 storage=4.00 ambient=24.0 humidity=45.0 lux=10.0 door=OPEN door_s=31 state=ALARM cooling=0 alarms=DOOR
+STATUS t_ms=52991 storage=4.00 ambient=24.0 humidity=45.0 lux=10.0 door=OPEN door_s=32 state=ALARM cooling=0 alarms=DOOR
+STATUS t_ms=53193 storage=4.00 ambient=24.0 humidity=45.0 lux=10.0 door=CLOSED door_s=0 state=NORMAL cooling=0 alarms=NONE
+STATUS t_ms=54193 storage=4.00 ambient=24.0 humidity=45.0 lux=10.0 door=CLOSED door_s=0 state=NORMAL cooling=0 alarms=NONE
+STATUS t_ms=55193 storage=4.00 ambient=24.0 humidity=45.0 lux=10.0 door=CLOSED door_s=0 state=NORMAL cooling=0 alarms=NONE
+STATUS t_ms=56193 storage=4.00 ambient=24.0 humidity=45.0 lux=999.5 door=CLOSED door_s=0 state=NORMAL cooling=0 alarms=NONE
+STATUS t_ms=57193 storage=4.00 ambient=24.0 humidity=45.0 lux=999.5 door=CLOSED door_s=0 state=NORMAL cooling=0 alarms=NONE
+STATUS t_ms=58193 storage=4.00 ambient=24.0 humidity=45.0 lux=999.5 door=CLOSED door_s=0 state=NORMAL cooling=0 alarms=NONE
+STATUS t_ms=59193 storage=4.00 ambient=24.0 humidity=45.0 lux=999.5 door=CLOSED door_s=0 state=NORMAL cooling=0 alarms=NONE
+STATUS t_ms=60193 storage=4.00 ambient=24.0 humidity=45.0 lux=999.5 door=CLOSED door_s=0 state=NORMAL cooling=0 alarms=NONE
+STATUS t_ms=61001 storage=4.00 ambient=24.0 humidity=45.0 lux=999.5 door=CLOSED door_s=0 state=ALARM cooling=0 alarms=LIGHT
+STATUS t_ms=62001 storage=4.00 ambient=24.0 humidity=45.0 lux=999.5 door=CLOSED door_s=0 state=ALARM cooling=0 alarms=LIGHT
+STATUS t_ms=63001 storage=4.00 ambient=24.0 humidity=45.0 lux=999.5 door=CLOSED door_s=0 state=ALARM cooling=0 alarms=LIGHT
+STATUS t_ms=63752 storage=4.00 ambient=24.0 humidity=45.0 lux=10.0 door=CLOSED door_s=0 state=NORMAL cooling=0 alarms=NONE
+STATUS t_ms=64752 storage=4.00 ambient=24.0 humidity=45.0 lux=10.0 door=CLOSED door_s=0 state=NORMAL cooling=0 alarms=NONE
+STATUS t_ms=65752 storage=4.00 ambient=24.0 humidity=45.0 lux=10.0 door=CLOSED door_s=0 state=NORMAL cooling=0 alarms=NONE
+STATUS t_ms=66752 storage=4.00 ambient=24.0 humidity=45.0 lux=10.0 door=CLOSED door_s=0 state=NORMAL cooling=0 alarms=NONE
+STATUS t_ms=67752 storage=4.00 ambient=24.0 humidity=45.0 lux=10.0 door=CLOSED door_s=0 state=NORMAL cooling=0 alarms=NONE
+STATUS t_ms=68752 storage=4.00 ambient=24.0 humidity=45.0 lux=10.0 door=CLOSED door_s=0 state=NORMAL cooling=0 alarms=NONE
+STATUS t_ms=69752 storage=4.00 ambient=24.0 humidity=45.0 lux=10.0 door=CLOSED door_s=0 state=NORMAL cooling=0 alarms=NONE
+STATUS t_ms=70752 storage=4.00 ambient=24.0 humidity=45.0 lux=10.0 door=CLOSED door_s=0 state=NORMAL cooling=0 alarms=NONE
+STATUS t_ms=71752 storage=4.00 ambient=24.0 humidity=45.0 lux=10.0 door=CLOSED door_s=0 state=NORMAL cooling=0 alarms=NONE
+STATUS t_ms=72752 storage=4.00 ambient=24.0 humidity=45.0 lux=10.0 door=CLOSED door_s=0 state=NORMAL cooling=0 alarms=NONE
+STATUS t_ms=73752 storage=4.00 ambient=24.0 humidity=45.0 lux=10.0 door=CLOSED door_s=0 state=NORMAL cooling=0 alarms=NONE
+STATUS t_ms=74752 storage=4.00 ambient=24.0 humidity=45.0 lux=10.0 door=CLOSED door_s=0 state=NORMAL cooling=0 alarms=NONE
+STATUS t_ms=75752 storage=4.00 ambient=24.0 humidity=45.0 lux=10.0 door=CLOSED door_s=0 state=NORMAL cooling=0 alarms=NONE
+STATUS t_ms=76752 storage=4.00 ambient=24.0 humidity=45.0 lux=10.0 door=CLOSED door_s=0 state=NORMAL cooling=0 alarms=NONE
+STATUS t_ms=77752 storage=4.00 ambient=24.0 humidity=45.0 lux=10.0 door=CLOSED door_s=0 state=NORMAL cooling=0 alarms=NONE
+STATUS t_ms=78752 storage=4.00 ambient=24.0 humidity=45.0 lux=10.0 door=CLOSED door_s=0 state=NORMAL cooling=0 alarms=NONE
+STATUS t_ms=79752 storage=4.00 ambient=24.0 humidity=45.0 lux=10.0 door=CLOSED door_s=0 state=NORMAL cooling=0 alarms=NONE
+STATUS t_ms=80752 storage=4.00 ambient=24.0 humidity=45.0 lux=10.0 door=CLOSED door_s=0 state=NORMAL cooling=0 alarms=NONE
+OK SET
+CONFIG ON=6.00 OFF=4.00 HIGH=8.00 CLEAR=7.50 DOOR=5s LUX=300
+ERR seuils : -55<=OFF<ON<HIGH<=125 ; OFF<=CLEAR<HIGH ; LUX 1..100000
+STATUS t_ms=81752 storage=4.00 ambient=24.0 humidity=45.0 lux=10.0 door=CLOSED door_s=0 state=NORMAL cooling=0 alarms=NONE
+OK RESET
+CONFIG ON=6.00 OFF=4.00 HIGH=8.00 CLEAR=7.50 DOOR=30s LUX=300
